@@ -9,7 +9,7 @@ export default function Bomb() {
         alignItems: "center",
       }}
     >
-      💣
+      <span role="img" aria-label="bomb emoji" >💣</span>
     </div>
   );
 }

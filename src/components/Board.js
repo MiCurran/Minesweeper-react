@@ -75,7 +75,7 @@ const Board = () => {
           position: "relative",
         }}
       >
-              <Timer gameOver={gameOver}/>
+              <Timer gameOver={gameOver} restartGame={restartGame}/>
         {gameOver && <Modal restartGame={restartGame} />}
         {grid.map((singleRow, index1) => {
           return (

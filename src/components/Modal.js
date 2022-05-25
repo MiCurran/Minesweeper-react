@@ -17,7 +17,7 @@ export default function Modal({ restartGame }) {
         background: "rgba(0,0,0,0.3)",
       }}
     >
-      <div id="gameOverImage"><h1>💣</h1><h1>Try Again!</h1></div>
+      <div id="gameOverImage"><span role="img" aria-label="bomb emoji" >💣</span><h1>Try Again!</h1></div>
       <div className="tryAgain" onClick={() => restartGame()}>
         Try Again
       </div>

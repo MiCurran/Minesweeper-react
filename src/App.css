@@ -23,7 +23,7 @@ body {
   z-index: 4;
   height: 70%;
   max-width: 100%;
-  background-color: #fefeffba;
+  background-color: #fefefff4;
   margin: 0 50px;
   position: relative;
   padding-top: 20px;
@@ -37,4 +37,33 @@ body {
   color: rgb(158, 255, 158);
   padding: 10px;
   font-weight: 700;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip:hover {
+  font-size: '10%';
 }
